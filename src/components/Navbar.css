@@ -1,0 +1,60 @@
+.navbar-item:hover .icon {
+  rotate: 180deg;
+  transition: ease-in 300ms;
+}
+
+.box-bg {
+  box-shadow: 1px 0px 24px 4px blue;
+}
+
+.box-bg:hover {
+  box-shadow: 0 0 0 0 transparent;
+  background-color: skyblue;
+}
+
+.main-box {
+  background-image: url(https://uploads-ssl.webflow.com/63a4982…/64363b0…_Ellipse%2050.webp),
+    radial-gradient(
+      circle closest-corner,
+      rgba(0, 56, 255, 0.5),
+      #000102 39%,
+      #000 51%
+    );
+  background-repeat: none;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 32px;
+  background-color: black;
+  z-index: 100;
+}
+
+.drop-down:hover {
+  display: flex;
+}
+
+.navbar-item:hover .drop-down {
+  display: flex;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.main-text {
+  animation: fadeIn 2s ease-in 1 forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.nav-items:hover .drop-down {
+}
